@@ -1,0 +1,13 @@
+version: '2'
+services:
+  postgres:
+    image: 'postgres:10'
+    restart: always
+    volumes:
+      - './postgres_data:/var/lib/postgresql/data'
+    environment:
+      - POSTGRES_DB=notes_db
+      - POSTGRES_USER=santy
+      - POSTGRES_PASSWORD=pwd3435
+    ports:
+      - '5434:5434'
