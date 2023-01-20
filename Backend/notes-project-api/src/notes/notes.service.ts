@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { CreateNoteDto } from './dto/create-note.dto';
 import { UpdateNoteDto } from './dto/update-note.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -40,8 +40,11 @@ export class NotesService {
   }
 
   async remove(id: number) {
-    await this.noteRepository.delete(id);
-    return true;
+    const data = await this.noteRepository.findOne({where:{id}});
+    if(!data) throw new HttpException('USER_NOT_FOUND', HttpStatus.NOT_FOUND);
+    data.active = false;
+    this.noteRepository.save(data);
+    return data.active;
   }
 
   
