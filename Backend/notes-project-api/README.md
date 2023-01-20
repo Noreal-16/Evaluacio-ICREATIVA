@@ -1,3 +1,10 @@
+
+## Documentación del Api
+Ingreso por URL localhost:3000-api
+[![Screenshot-from-2023-01-20-11-13-27.png](https://i.postimg.cc/L6thtPxg/Screenshot-from-2023-01-20-11-13-27.png)](https://postimg.cc/MvGWxn2z)
+
+#El api permite regigistrar Usuarios y loguearsademas permite autenticación con JWT, esta configurado con DB Mysql
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
