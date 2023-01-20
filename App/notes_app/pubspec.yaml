@@ -1,0 +1,71 @@
+name: notes_app
+description: A new Flutter project.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.2
+  auto_size_text: ^3.0.0
+  shared_preferences: ^2.0.16
+  provider: ^6.0.5
+  dio: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/home/
+    - assets/images/router_multimodal/
+    - assets/images/alert/
+    - assets/images/carpool/
+    - assets/images/icons/
+    - assets/sounds/
+
+  fonts:
+    - family: alegreyaregular
+      fonts:
+        - asset: assets/fonts/alegreya-regular.ttf
+
+    - family: alegreyasans
+      fonts:
+        - asset: assets/fonts/alegreya-sans.ttf
+
+    - family: metaprobold
+      fonts:
+        - asset: assets/fonts/FFMetaProBold.TTF
+
+    - family: metaproregular
+      fonts:
+        - asset: assets/fonts/FFMetaProRegular.TTF
+
+    - family: metahead
+      fonts:
+        - asset: assets/fonts/meta-head.otf
+
+    - family: metaheadbold
+      fonts:
+        - asset: assets/fonts/meta-head-bold.otf
