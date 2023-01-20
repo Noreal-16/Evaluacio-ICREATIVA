@@ -1,3 +1,10 @@
+#Descripcipón Web
+Se desarrollo el maketado con libreria de JS reack js, la que permite registrarte haciendo uso del backend realizado en nest 
+permite almacenar el token en una cokie 
+![image](https://user-images.githubusercontent.com/53454053/213750733-11302f26-d780-4805-baae-65ff0f23e3cb.png)
+Actualmente solo permite registrarte, 
+TODO: Consumir api para completar el CRUD 
+[![Screenshot-from-2023-01-20-11-22-30.png](https://i.postimg.cc/nrfrN8ZT/Screenshot-from-2023-01-20-11-22-30.png)](https://postimg.cc/zbpqRcyR)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
